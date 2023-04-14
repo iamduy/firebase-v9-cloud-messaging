@@ -14,9 +14,7 @@ export const getMessagingToken = async () => {
     const messaging = getMessaging(app);
     await Notification.requestPermission();
     token = await getToken(messaging, {
-      vapidKey:
-        process.env.NEXT_PUBLIC_FIREBASE_VAPID_KEY ||
-        'BNg93Dot5GDDjWimkZ18DvN9TqK0cxmsLanc0pmadVS6PyBPg8hW-Qorq_Hx-rPLUqwQlxRqn3XRRh201__br80',
+      vapidKey: process.env.NEXT_PUBLIC_FIREBASE_VAPID_KEY,
     });
     if (token) {
       console.log('FCM registration token', token);
