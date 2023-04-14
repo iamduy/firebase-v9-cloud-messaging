@@ -6,7 +6,7 @@ self.addEventListener("fetch", () => {
   self.firebaseConfig = Object.fromEntries(urlParams);
 });
 
-export const firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyCOhLD9SzpRjPZIyrqFxRuJH7fHYJ2B2V0",
   authDomain: 'sanmario2001.firebaseapp.com',
   projectId: 'sanmario2001',
